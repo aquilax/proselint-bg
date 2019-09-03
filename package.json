@@ -7,6 +7,9 @@
   "private": true,
   "main": "cjs/index.js",
   "module": "esm/index.js",
+  "bin": {
+    "proselint-bg": "./esm/cli.js"
+  },
   "types": "types",
   "scripts": {
     "lint": "web-scripts lint",
