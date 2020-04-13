@@ -8,10 +8,11 @@
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "bin": {
-    "proselint-bg": "./esm/cli.js"
+    "proselintbg": "./esm/cli.js"
   },
   "types": "types",
   "scripts": {
+    "start": "$npm_package_bin_proselintbg",
     "lint": "web-scripts lint",
     "test": "web-scripts test",
     "build": "web-scripts build",

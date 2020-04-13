@@ -1,12 +1,4 @@
-enum LinterType {
-  TEXT = 1,
-  SENTENCE,
-  WORD
-}
-
-interface LintMessageInterface {
-  message: string;
-}
+import { LintMessageInterface, LinterInterface, LinterType } from './linters';
 
 interface Tokenizer {
   (text: string): string[];
@@ -17,30 +9,21 @@ interface TokenizerInterface {
   word: Tokenizer;
 }
 
-interface LintRunner {
-  (text: string): LintMessageInterface[];
-}
-
-interface LinterInterface {
-  type: LinterType;
-  run: LintRunner;
-}
-
 export function linter(
   text: string,
   tokenizer: TokenizerInterface,
-  linters: LinterInterface[]
+  linters: LinterInterface[],
 ): LintMessageInterface[] {
   const result: LintMessageInterface[] = [];
 
   const textLinters = linters.filter(
-    (linter: LinterInterface) => linter.type === LinterType.TEXT
+    (l: LinterInterface) => l.type === LinterType.TEXT,
   );
   const sentenceLinters = linters.filter(
-    (linter: LinterInterface) => linter.type === LinterType.SENTENCE
+    (l: LinterInterface) => l.type === LinterType.SENTENCE,
   );
   const wordLinters = linters.filter(
-    (linter: LinterInterface) => linter.type === LinterType.WORD
+    (l: LinterInterface) => l.type === LinterType.WORD,
   );
 
   if (textLinters) {
@@ -67,12 +50,12 @@ export function linter(
 
 export function applyLinters(
   text: string,
-  linters: LinterInterface[]
+  linters: LinterInterface[],
 ): LintMessageInterface[] {
   return linters.reduce(
     (messages: LintMessageInterface[], linter: LinterInterface) => {
       return [...messages, ...linter.run(text)];
     },
-    []
+    [],
   );
 }
