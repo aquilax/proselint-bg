@@ -4,7 +4,14 @@ export enum LinterType {
   WORD,
 }
 
+export enum LinterError {
+  MISSPELLED_WORD = 1,
+  SPACE_BEFORE_COMMA,
+  COMMA_WITHOUT_SPACE,
+}
+
 export interface LintMessageInterface {
+  code: LinterError;
   message: string;
 }
 

@@ -1,4 +1,4 @@
-import { LinterType, LinterInterface } from '.';
+import { LinterType, LinterInterface, LinterError } from '.';
 
 // List of commonly misspelled Bulgarian words
 // https://bg.wikipedia.org/wiki/%D0%A3%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D0%BF%D0%B8%D1%81%D1%8A%D0%BA_%D0%BD%D0%B0_%D0%BF%D1%80%D0%B0%D0%B2%D0%BE%D0%BF%D0%B8%D1%81%D0%BD%D0%B8_%D0%B3%D1%80%D0%B5%D1%88%D0%BA%D0%B8
@@ -1100,7 +1100,12 @@ export class CommonMisspelled implements LinterInterface {
   run(word: String) {
     const found = this.words.find(pair => pair[0] === word);
     if (found) {
-      return [{ message: `Може би имахте предвид "${found[1]}"` }];
+      return [
+        {
+          message: `Може би имахте предвид "${found[1]}"`,
+          code: LinterError.MISSPELLED_WORD,
+        },
+      ];
     }
     return [];
   }
