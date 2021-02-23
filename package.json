@@ -27,6 +27,6 @@
   },
   "devDependencies": {
     "@spotify/web-scripts": "^9.0.1",
-    "husky": "^5.1.0"
+    "husky": "^5.1.1"
   }
 }
