@@ -1324,15 +1324,15 @@
   resolved "https://registry.yarnpkg.com/@spotify/eslint-config-typescript/-/eslint-config-typescript-13.0.1.tgz#47801a66d5569074a110f4422eba60aafc6bd7f8"
   integrity sha512-1wLQFyN2H2v+rn/mytA2PGzmGxOmdZdcKBpNyW+4z0qJydpvavp2SeBj/X+FEbwKoYBoUdG9QLr40eLQh1ZHZA==
 
-"@spotify/eslint-config@^14.1.1":
-  version "14.1.1"
-  resolved "https://registry.yarnpkg.com/@spotify/eslint-config/-/eslint-config-14.1.1.tgz#913321af21ebc040b168bfb4c532aa975cdf185d"
-  integrity sha512-txJ0hiwkTB+58l3OvoiuIvLypH0Z2kNQ0Xh95XOX0uK21iZCDpsFw9yVzdHRvAbUBUSQFXKj8sCP7lNitPK2Kw==
+"@spotify/eslint-config@^14.1.2":
+  version "14.1.2"
+  resolved "https://registry.yarnpkg.com/@spotify/eslint-config/-/eslint-config-14.1.2.tgz#8e0f1d1c42836b567ca90c5e2759d46f407982d0"
+  integrity sha512-sNeYxFNJ6b4xLGAKuZA8NCRhznJW8j445l3OFcQNbP6GbiGnTyezxjwlNosXR/EYK31rcLnJsVe/DZPZ72SB2A==
   dependencies:
     "@spotify/eslint-config-base" "^13.0.1"
     "@spotify/eslint-config-react" "^13.0.1"
     "@spotify/eslint-config-typescript" "^13.0.1"
-    "@spotify/eslint-plugin" "^14.1.1"
+    "@spotify/eslint-plugin" "^14.1.2"
     "@spotify/web-scripts-utils" "^13.0.1"
     "@typescript-eslint/eslint-plugin" "^5.13.0"
     "@typescript-eslint/parser" "^5.13.0"
@@ -1342,10 +1342,10 @@
     eslint-plugin-react "^7.29.2"
     eslint-plugin-react-hooks "^4.2.0"
 
-"@spotify/eslint-plugin@^14.1.1":
-  version "14.1.1"
-  resolved "https://registry.yarnpkg.com/@spotify/eslint-plugin/-/eslint-plugin-14.1.1.tgz#49b2c25b8019f082c3f650484df75967acc47105"
-  integrity sha512-mhShkJqlfnG1c/iX7aYYOlRMyuFR1l4beNRasmN+WfYBl/hZypMP9gag0g74uyDRxaLnKEncFZwPNubYlXtDNA==
+"@spotify/eslint-plugin@^14.1.2":
+  version "14.1.2"
+  resolved "https://registry.yarnpkg.com/@spotify/eslint-plugin/-/eslint-plugin-14.1.2.tgz#9c2f9356cbd4c726782d2013a7a908d744286ccc"
+  integrity sha512-n086q6PIPRMwfr5HEMcI61Cma8kNyfo4UYm1A9KbK5YLd1RdpxD3NxrAGFbnNxEfpJzuyGf6vbk8tnCaQ7e+bA==
 
 "@spotify/prettier-config@^13.0.1":
   version "13.0.1"
@@ -1365,14 +1365,14 @@
     glob "^7.1.4"
     read-pkg-up "^7.0.1"
 
-"@spotify/web-scripts@^14.1.1":
-  version "14.1.1"
-  resolved "https://registry.yarnpkg.com/@spotify/web-scripts/-/web-scripts-14.1.1.tgz#0db7dcc52406c55dcc6abb949bb941de1bb1c5d5"
-  integrity sha512-ZS5gkbTRKpyoS6adroBdKiUscn54JPF+wjgYpO4PjtMhP+eEroRT+TxDGQ/7nf46G/fvZCO+t2Ng4n+jeCOamg==
+"@spotify/web-scripts@^14.1.2":
+  version "14.1.2"
+  resolved "https://registry.yarnpkg.com/@spotify/web-scripts/-/web-scripts-14.1.2.tgz#8a8572b8e604e69f7c07851cae4369be5aec28b6"
+  integrity sha512-SZfbc+2GUeGrEMLP5ZvB78j9UHaKBMOcYaJLphXwKqqQXwHQt/3JiWg+e+av+fMc/VHR+rJPAV6dFUXKtxVaTQ==
   dependencies:
     "@commitlint/cli" "^17.0.3"
     "@commitlint/config-conventional" "^17.0.3"
-    "@spotify/eslint-config" "^14.1.1"
+    "@spotify/eslint-config" "^14.1.2"
     "@spotify/prettier-config" "^13.0.1"
     "@spotify/tsconfig" "^13.0.1"
     "@spotify/web-scripts-utils" "^13.0.1"
